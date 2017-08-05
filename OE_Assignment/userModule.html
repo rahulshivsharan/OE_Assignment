@@ -1,0 +1,113 @@
+<div class="container paddingBox" ng-cloak ng-init="vm.init()">
+	<div class="row topBarWrapper"> <!-- Search Item Form -->
+		<div class="col-md-6">
+			<div class="row"></div>
+				<h2>Create User</h2>
+				<form class="form-horizontal" name="createUserForm" ng-submit="createUserForm.$valid && vm.create()" novalidate>
+					<div class="form-group">
+						<label for="firstName" class="col-sm-4 control-label">First Name</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="firstName" name="firstName" ng-model="vm.firstName" required>
+							<div ng-show="createUserForm.$submitted" class="form_error">
+								<div ng-show="createUserForm.firstName.$error.required">Cannot be empty</div>								
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="lastName" class="col-sm-4 control-label">Last Name</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="lastName" name="lastName" ng-model="vm.lastName" required>
+							<div ng-show="createUserForm.$submitted" class="form_error">
+								<div ng-show="createUserForm.lastName.$error.required">Cannot be empty</div>								
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="sex" class="col-sm-4 control-label">Sex</label>
+						<div class="col-sm-8">							
+							<select class="form-control" 
+									id="sex" 
+									name="sex" 
+									ng-options="key as value for (key,value) in vm.sexOption" 
+									ng-model="vm.sex" required>								
+							</select>
+							<div ng-show="createUserForm.$submitted" class="form_error">
+								<div ng-show="createUserForm.sex.$error.required">Cannot be empty</div>								
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="dob" class="col-sm-4 control-label">Date of Birth</label>
+						<div class="col-sm-8">
+							
+							<input 	type="text" 
+									class="form-control" 
+									id="dob" 
+									name="DateOfBirth" 
+									ng-model="vm.dob" 
+									required 
+									ui-date="vm.dateOptions">							
+							<div ng-show="createUserForm.$submitted" class="form_error">
+								<div ng-show="createUserForm.DateOfBirth.$error.required">Cannot be empty</div>								
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="country" class="col-sm-4 control-label">Country</label>
+						<div class="col-sm-8">
+							 <input type="text" 
+							 		id="country"
+							 		name="country"
+							 		ng-model="vm.country" 
+							 		uib-typeahead="country.alpha2Code as country.name for country in vm.countryList | filter:$viewValue | limitTo:8" 
+							 		class="form-control">
+
+							<div ng-show="createUserForm.$submitted" class="form_error">
+								<div ng-show="createUserForm.country.$error.required">Cannot be empty</div>								
+							</div>
+						</div>
+					</div>
+
+									
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10 text-right">
+						<button type="submit" class="btn btn-default btnOrange search" id="search">Add</button>
+						<button type="button" class="btn btn-default btnTrans">Clear</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<br/>
+	<br/>
+	<div class="row topBarWrapper"><!-- List Items  -->
+		<div class="col-md-12">
+			<table class="table table-stripped"> 
+				<caption><b>Offers</b></caption>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Code</th>
+							<th>Display Name</th>
+							<th>Description</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+				<tbody>
+					<tr ng-repeat="item in vm.itemList" class="tableRow">
+						<td>{{item.id}}</td>
+						<td>{{item.code}}</td>
+						<td>{{item.displayName}}</td>
+						<td>{{item.desc}}</td>
+						<td>{{item.price}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div><!-- end of row -->	
+</div>

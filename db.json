@@ -1,0 +1,65 @@
+{
+  "items": [
+    {
+      "id": "offerSku1",
+      "code": "12345",
+      "displayName": "Internet Plus + Voice (44/19) #382591 NC",
+      "desc": "Internet Plus + Voice (44/19) #382591 NC",
+      "price": 0
+    },
+    {
+      "id": "offerSku2",
+      "code": "12346",
+      "displayName": "OVB SAVE: 3-Play Select #654873",
+      "desc": "OVB SAVE: 3-Play Select #654873",
+      "price": 0
+    },
+    {
+      "id": "offerSku3",
+      "code": "12347",
+      "displayName": "Internet Plus #636213",
+      "desc": "Internet Plus #636213",
+      "price": 0
+    },
+    {
+      "id": "offerSku4",
+      "code": "12348",
+      "displayName": "SAVE: Internet Plus $39.99 #651243",
+      "desc": "SAVE: Internet Plus $39.99 #651243",
+      "price": 0
+    },
+    {
+      "id": "offerSku5",
+      "code": "12349",
+      "displayName": "3-Play Select w/ Free/$9.99 DVR Srv (29/29/29) SPP #733573",
+      "desc": "3-Play Select w/ Free/$9.99 DVR Srv (29/29/29) SPP #733573",
+      "price": 0
+    }
+  ],
+  "users": [
+    {
+      "firstName": "sagar",
+      "lastName": "shinkar",
+      "sex": "M",
+      "dob": "1982-09-10",
+      "country": "IN",
+      "id": 3
+    },
+    {
+      "firstName": "Kristof",
+      "lastName": "Agacii",
+      "sex": "M",
+      "dob": "1986-04-12",
+      "country": "IN",
+      "id": 8
+    },
+    {
+      "firstName": "Advinov",
+      "lastName": "Sabastian",
+      "sex": "M",
+      "dob": "1986-04-12",
+      "country": "IN",
+      "id": 9
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	    <title>Object Edge</title>
+
+	    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="assets/css/readme.css" rel="stylesheet">
+        </head>
+        <body>
+          
+<h1>JavaScript Assignment</h1>
+
+<p>You can use jQuery, React or AngularJS to build this application. You
+are free to download these or any other libraries you require from the
+Internet.</p>
+
+<p>Any other assets like images you can download from the
+  Internet.</p>
+
+<h3>What you are provided with</h3>
+<ul>
+  <li><strong>index.html</strong> - This contains all the HTML. Please reuse as much as
+    possible for any new pages or sections you need to create.</li>
+  <li><strong>assets/css/bootstrap.min.css</strong></li>
+  <li><strong>assets/css/style.css</strong> - Some basic styles. Please resue and add
+    to this file any new styles you need to create</li>
+  <li>Any JavaScript files you download/create, place them into
+    <strong>assets/js</strong> folder</li>
+  <li>If you are using React/AngularJS create a folder heirarchy as
+  you wish</li>
+</ul>
+
+<h3>Code Quality</h3>
+<p>Make sure your code is well organized into functions/modules. Your
+  code should be readable and well structured.
+</p>
+
+<h3>This is a screenshot of the index page (index.html)</h3>
+
+<p><img src="screenshots/index.png" width="900" height="400" /></p>
+
+<h2>Task 1</h2>
+<ul>
+<li>Change the top 2 menu items on the left side bar to
+<ol>
+<li>Create Offer</li>
+<li>List Offers</li>
+</ol></li>
+</ul>
+
+<p>On click of the menu item (for example Create Offer), display a
+<strong>modal dialog</strong> with only the message <em>To be
+implemented</em>. This dialog should have a <strong>close
+button</strong> as well as an <strong>X</strong> at the top right.
+When either of them are clicked it should close the dialog.</p>
+
+<h2>Task 2</h2>
+<h3>The search form</h3>
+
+<h4>Validations</h4>
+<p>When submitted, the <strong>Name</strong> field
+should <strong>NOT</strong> be empty with a <strong>maximum of 12
+characters</strong>. The <strong>Offer ID</strong> field should
+<strong>NOT</strong> be empty and accept <strong>only a minimum of 4 and maximum of 10
+numerals</strong>. Display an appropriate error message if the
+validation fails. This error message should appear at the top of the
+search form. <strong>Do Not</strong> use an alert box.</p>
+
+<h4>AJAX</h4>
+<p>On successfull validations, send an AJAX <strong>GET</strong>
+  request to <strong>http://localhost:3005/items</strong>. You will
+  receive JSON data exactly as below.</p>
+
+  <pre>
+    {
+    "items": [
+    {
+    "id": "offerSku1",
+    "code": "12345",
+    "displayName": "Internet Plus + Voice (44/19) #382591 NC",
+    "desc": "Internet Plus + Voice (44/19) #382591 NC",
+    "price": 0
+        
+    },
+    {
+    "id": "offerSku2",
+    "code": "12346",
+    "displayName": "OVB SAVE: 3-Play Select #654873",
+    "desc": "OVB SAVE: 3-Play Select #654873",
+    "price": 0
+        
+    },
+    {
+    "id": "offerSku3",
+    "code": "12347",
+    "displayName": "Internet Plus #636213",
+    "desc": "Internet Plus #636213",
+    "price": 0
+        
+    },
+    {
+    "id": "offerSku4",
+    "code": "12348",
+    "displayName": "SAVE: Internet Plus $39.99 #651243",
+    "desc": "SAVE: Internet Plus $39.99 #651243",
+    "price": 0
+        
+    },
+    {
+    "id": "offerSku5",
+    "code": "12349",
+          "displayName": "3-Play Select w/ Free/$9.99 DVR Srv
+    (29/29/29) SPP #733573",
+          "desc": "3-Play Select w/ Free/$9.99 DVR Srv (29)"
+    }
+    ]
+    }
+    </pre>
+
+<br/>
+<h4>User Interface (Optional, but bonus points if implemented)</h4>
+  <p>
+Make sure that when the submit button is clicked it is <strong>disabled</strong> so
+that the user cannot click it again. Also display a <strong>loading icon</strong> like
+a spinner, where the results table should appear.</p>
+
+<h3>The results table</h3>
+
+<p>Display the above received JSON data as shown below in a HTML
+  table. Please use the <strong>table</strong> element and style it
+  using CSS.</p>
+
+<p>On mouse hover of the results table <strong>highlight the current
+  row</strong>. Also make the table rows <strong>striped</strong>, i.e. alternate rows
+  should have the same color for UI enhancements</p>
+
+<p>
+Bonus points if you implement sorting!</p>
+
+<p><img src="screenshots/Offers Listing.png" width="1100" height="600"
+        /></p>
+
+<h2>Task 3</h2>
+<h3>User registration form</h3>
+
+<p>Create a form similar to the search form for new user
+  registration. Display this form when user clicks on the menu
+  item <strong>Create Offer</strong></p>
+
+<p>This form should be visible in the same section as the search
+  form. <strong>DO NOT</strong> make a full page refresh</p>
+
+<p>The form should have the following fields</p>
+
+<ol>
+  <li><strong>First Name (input field name: firstName)</strong>. Required field. No special characters should be
+    allowed</li>
+  <li><strong>Last Name (input field name: lastName)</strong>. Same validations as First name.</li>
+  <li><strong>Sex (input field name: sex)</strong></li>
+  <li><strong>Date of Birth (input field name: dob)</strong> Required. Make this as user friendly as possible, by
+  either using drop downs for year, month, day or an input mask. Age
+    should be greater than 18 years.</li>
+  <li><strong>Country (input field name: country)</strong> as a select drop down. Populate this field with all
+    countries from which the user can select his/her country</li>
+</ol>
+
+<p>On submit, send an AJAX <strong>POST</strong> request to <strong>http://localhost:3005/users</strong></p>
+
+<p>Display the received response in either a modal dialog or on the
+  same page. It will be in JSON format</p>
+
+<pre>
+  {
+  "firstName": "fff",
+  "lastName": "lll",
+  "sex": "M",
+  "dob": "1985-04-12",
+  "country": "IN",
+  "id": 1
+ }
+</pre>
+
+        </body>
+</html>

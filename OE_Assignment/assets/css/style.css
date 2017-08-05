@@ -1,0 +1,280 @@
+
+/*******************
+GLOBAL STYLE
+*******************/
+
+body{
+	background-color: #f7f7f7;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'LatoWebMedium';
+	color: #6b6b6b;
+}
+
+.container{
+	width: 100%;
+	padding: 0px;
+}
+
+.mainContainer{
+	position: relative;
+	padding-bottom: 50px;
+}
+
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+ul li{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	display: block;
+}
+
+.pd0{
+	padding: 0px;
+}
+
+.m0{
+	margin: 0px;
+}
+
+/*******************
+BUTTON STYLE
+*******************/
+.btn-default{
+	margin: 0 8px;
+}
+
+.btn-default:last-child{
+	margin-right: 0px;
+}
+
+.btnOrange{
+	background-color: #ed8e00;
+	border: 1px solid #ed8e00;
+	font-size: 14px;
+	color: #fffade;
+	box-shadow: none;
+	outline: none;
+	padding: 7px 20px;
+	transition: all 0.4s ease-in-out;
+}
+
+.btnOrange:hover{
+	box-shadow: none;
+	outline: none;
+	background-color: #ed8e00;
+	border: 1px solid #ed8e00;
+	transition: all 0.4s ease-in-out;
+	color: #fffade;
+}
+
+.btnTrans{
+	background-color: #fff;
+	border: 1px solid #d9d9d9;
+	font-size: 14px;
+	color: #ed8e00;
+	box-shadow: none;
+	outline: none;
+	padding: 7px 20px;
+	transition: all 0.4s ease-in-out;
+}
+
+.btnTrans:hover{
+	box-shadow: none;
+	outline: none;
+	background-color: #ed8e00;
+	border: 1px solid #ed8e00;
+	color: #fff;
+	transition: all 0.4s ease-in-out;
+}
+
+/*******************
+LEFT COLUMN
+*******************/
+.leftColumn{
+	min-height: 100%;
+    width: 214px;
+    padding: 0;
+    background: #6c6c6c;
+    position: absolute;
+    z-index: 1;
+}
+
+/*******************
+NAV
+*******************/
+.navIcon{
+	padding: 30px 20px;
+}
+
+.navIcon a{
+	font-size: 23px;
+    color: #fff;
+}
+
+.navigation .navbar-default{
+	background: transparent;
+	border: none;
+}
+
+.navigation .navbar-default ul li a{
+	color: #fff;
+	font-size: 16px;
+	font-family: 'LatoWebMedium';
+	transition: all 0.4s ease-in-out;
+}
+
+.navigation .navbar-default ul li a:hover{
+	background-color: #000000;
+	transition: all 0.4s ease-in-out;
+}
+
+.navigation .navbar-default ul li a i{
+	margin-right: 10px;
+}
+
+.navigation .navbar-default ul li a span{
+	background: url(../images/menu-icon.png) no-repeat 0 0;
+	height: 23px;
+    width: 21px;
+    float: left;
+    position: relative;
+    top: -1px;
+    left: 0px;
+    margin-right: 10px;
+}
+
+.navigation .navbar-default ul li a span.boardIcon{
+    background-position: -7px -9px;
+}
+
+.navigation .navbar-default ul li a span.userIcon{
+    background-position: -8px -47px;
+}
+
+.navigation .navbar-default ul li a span.settingsIcon{
+    background-position: -8px -83px;
+}
+
+.navigation .navbar-default ul li a span.helpIcon{
+    background-position: -8px -120px;
+}
+
+/*******************
+RIGHT COLUMN
+*******************/
+.rightColumn{
+    margin-left: 214px;
+}
+
+/*******************
+TOP BAR
+*******************/
+.topBarWrapper{
+    background: #fff;
+    box-shadow: 0px 0px 10px #bbc9d3;
+    width: 100%;
+}
+
+.topBar{
+	padding: 20px 30px 10px;
+	border-bottom: 1px solid #D9DEE4;
+}
+
+.logoWrapper a{
+	display: inline-block;
+}
+
+.rightSideNav{
+	text-align: right;
+}
+
+.rightSideNav li{
+	display: inline-block;
+	margin: 0 15px;
+}
+
+.rightSideNav li:first-child{
+	margin-left: 0px;
+}
+
+.rightSideNav li:last-child{
+	margin-right: 0px;
+}
+
+.rightSideNav li a{
+	font-size: 14px;
+	font-family: 'LatoWebMedium';
+	color: #6b6b6b;
+	text-decoration: none;
+}
+
+.profile span.profileImg{
+	margin-right: 15px;
+}
+
+.topBarBottom h1{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'LatoWebMedium';
+	margin: 0px;
+	padding: 20px 40px;
+}
+
+
+/*******************
+TILE
+*******************/
+.tile{
+	margin: 10px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 35px 25px;
+    box-shadow: 0px 1px 6px 0px #bbc9d3;
+    position: relative;
+}
+
+.tile h2{
+	font-size: 18px;
+	margin-bottom: 25px;
+	margin-top: 0;
+}
+
+/*******************
+TILE FORM
+*******************/
+.form-horizontal label.control-label{
+	text-align: left;
+	font-size: 16px;
+	color: #6b6b6b;
+	font-weight: normal;
+}
+
+.form-horizontal input{
+	box-shadow: none;
+	border: 1px solid #d9d9d9;
+	outline: none;
+}
+
+.form-horizontal input:focus{
+	outline: none;
+	box-shadow: none;
+}
+
+.form_error{
+	color : red;
+}
+
+.paddingBox{
+	padding-left:2%;
+	padding-top: 1%;
+}
+
+.tableRow:hover{
+	background-color : #ed8e00;
+	color : #fffade;
+}
